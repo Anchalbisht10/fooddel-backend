@@ -1,4 +1,5 @@
 import express  from "express"
+import dotenv from 'dotenv';
 import cors from 'cors'
 import { connectDb } from "./config/db.js"
 import userRouter from "./routes/userRoute.js"
@@ -6,7 +7,6 @@ import foodRouter from "./routes/foodRoute.js"
 import 'dotenv/config'
 import cartRouter from "./routes/cartRoute.js"
 import orderRouter from "./routes/orderRoute.js"
-import dotenv from 'dotenv';
 
 dotenv.config(); // loads .env variables
 
